@@ -1,4 +1,3 @@
-from django.http import request
 from user.serializers import UserSerializer, AuthTokenSerializer
 from rest_framework import generics, authentication, permissions
 from rest_framework.authtoken.views import ObtainAuthToken

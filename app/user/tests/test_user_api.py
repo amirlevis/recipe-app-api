@@ -124,13 +124,13 @@ class PrivateUserApiTests(TestCase):
 
     def setUp(self) -> None:
         self.user = create_user(
-            email= "ppp@moshecohen.com",
+            email="ppp@moshecohen.com",
             password="abcdefg",
             name='name',
         )
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
-    
+
     def test_retrieve_profile_success(self):
         """Test retreiving profile for logged in user"""
         res = self.client.get(ME_URL)
