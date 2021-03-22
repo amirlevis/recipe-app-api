@@ -25,7 +25,13 @@
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": []
+	"extensions": [
+		"ms-python.python",
+		"njpwerner.autodocstring",
+		"batisteo.vscode-django",
+		"ms-python.vscode-pylance",
+		"magicstack.magicpython"
+	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
